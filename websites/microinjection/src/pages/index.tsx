@@ -11,7 +11,7 @@ function HomepageHeader() {
     <header className="hero">
       <div className="container">
         <div className="text--center">
-          <Logo />
+          <Logo className={styles.heroLogo}/>
           <span className={styles.heroTitleTextHtml}>
             <p className="hero__subtitle margin-vert--lg"
               dangerouslySetInnerHTML={{

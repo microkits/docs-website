@@ -12,3 +12,7 @@
 .heroTitleTextHtml b {
   color: var(--ifm-color-primary);
 }
+
+.heroLogo {
+  max-width: 100%;
+}
