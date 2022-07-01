@@ -5,7 +5,6 @@ title: Scopes
 Scopes allows you to determine how returned instances are cached. Microinjection lets you define the scope when registering a dependency.
 
 ```typescript
-
 container.register("release year").asValue(2022).inTransientScope();
 container.register("release year").asValue(2022).inSingletonScope();
 container.register("release year").asValue(2022).inContextScope();
@@ -15,7 +14,6 @@ container.register("release year").asValue(2022).inContextScope();
 container.register("release year").asValue(2022).inScope(Scope.TRANSIENT);
 container.register("release year").asValue(2022).inScope(Scope.SINGLETON);
 container.register("release year").asValue(2022).inScope(Scope.CONTEXT);
-
 ```
 
 ## Transient Scope

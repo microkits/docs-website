@@ -15,7 +15,6 @@ For the most part, because they are defined according to the way you register so
 This provider is used to instantiate and inject all dependencies a class needs. It is able to inject both constructor dependencies and property dependencies.
 
 ```typescript
-
 import { Microinjection } from "@microkits/microinjection";
 
 const container = Microinjection.getDefaultContainer();
@@ -48,13 +47,11 @@ You can also specify that a constructor property or dependency is not required, 
 This provider is useful for registering constants, or things that have a already been instantiated in a particular way.
 
 ```typescript
-
 import { Microinjection } from "@microkits/microinjection";
 
 const container = Microinjection.getDefaultContainer();
 
 container.register("release year").asValue(2022);
-
 ```
 
 ## FactoryProvider
@@ -104,5 +101,4 @@ container.register("hello").asProvider(
 
 console.log(container.resolve("hello"))
 // "Hello Microinjection!"
-
 ```

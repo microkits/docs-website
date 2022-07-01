@@ -28,7 +28,6 @@ export const repositoriesConfiguration = new Configuration((container) => {
   container.register("UserRepository").asClass(UserRepository);
   container.register("OrderRepository").asClass(OrderRepository);
 });
-
 ```
 
 ```typescript
@@ -41,7 +40,6 @@ export const servicesConfiguration = new Configuration((container) => {
   container.register("UserService").asClass(UserService);
   container.register("OrderService").asClass(OrderService);
 });
-
 ```
 
 ## Loading configurations

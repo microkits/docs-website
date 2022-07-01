@@ -44,5 +44,4 @@ const user2 = childContext.resolve("user");
 
 // user1 and user2 are the same instance
 console.log(user1 === user2); // true
-
 ```

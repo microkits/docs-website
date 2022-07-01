@@ -70,5 +70,4 @@ const personWithDog = petAsDogContainer.resolve("Person");
 // Check pet instances: 
 console.log(personWithCat.pet instance of Cat); // true
 console.log(personWithDog.pet instance of Dog); // true
-
 ```

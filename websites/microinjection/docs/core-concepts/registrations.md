@@ -88,7 +88,6 @@ import { Microinjection } from "@microkits/microinjection";
 const container = Microinjection.getDefaultContainer();
 
 container.remove("release year");
-
 ```
 
 ## Removing all registrations
@@ -101,7 +100,6 @@ import { Microinjection } from "@microkits/microinjection";
 const container = Microinjection.getDefaultContainer();
 
 container.clear();
-
 ```
 
 ## Checking if a registration exists
@@ -116,8 +114,8 @@ const container = Microinjection.getDefaultContainer();
 if (container.has("release year")) {
   console.log("The registration exists!");
 }
-
 ```
+
 If you need to verify that a registration exists, taking into account all ancestors of a container, you can use the following code snippet:
 
 ```typescript
@@ -127,7 +125,6 @@ const container = Microinjection.getDefaultContainer();
 
 // container.get() returns a registration by their id
 const exists = (container.get("release year") != null);
-
 ```
 
 :::note
