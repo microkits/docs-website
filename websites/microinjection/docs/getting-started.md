@@ -56,7 +56,12 @@ class CatOwner {
 }
 
 container.register("Cat").asClass(Cat);
-container.register("CatOwner").asClass(CatOwner);
+container.register("CatOwner").asClass(CatOwner, {
+  properties: [{
+    name: "cat",
+    inject: "Cat"
+  }]
+});
 ```
 
 Now, you can request that the `Container` resolve a `Registration` for you. It will also resolve all necessary dependencies.
