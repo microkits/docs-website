@@ -65,6 +65,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [{name: 'keywords', content: 'dependency, inversion, javascript, typescript, nodejs, ioc, container, inversion, control'}],
       colorMode: {
         defaultMode: 'dark',
       },
