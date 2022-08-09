@@ -64,7 +64,7 @@ const value = container.resolve("release year");
 
 ### Not required resolution
 
-You can also specify whether the value is not required to be resolved, so an error will not be thrown if a record is not found and `undefined` will be returned.
+You can also specify whether the value is not required to be resolved, so an error will not be thrown if a registration is not found and `undefined` will be returned.
 
 ```typescript
 import { Microinjection } from "@microkits/microinjection";

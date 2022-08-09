@@ -23,6 +23,11 @@ module.exports = {
         },
         {
           type: 'doc',
+          id: 'core-concepts/decorators',
+          label: 'Decorators'
+        },
+        {
+          type: 'doc',
           id: 'core-concepts/providers',
           label: 'Providers'
         },
