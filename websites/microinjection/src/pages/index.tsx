@@ -17,7 +17,7 @@ function HomepageHeader() {
               dangerouslySetInnerHTML={{
                 __html: translate({
                   id: 'homepage.hero.subtitle',
-                  message: 'A <b>inversion of control container</b> for build better Node.js applications.'
+                  message: 'An <b>inversion of control container</b> for build better Node.js applications.'
                 })
               }}
             />
