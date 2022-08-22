@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('./src/themes/light');
+const darkCodeTheme = require('./src/themes/dark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -58,6 +58,12 @@ const config = {
         theme: {
           customCss: require.resolve('@packages/design/css/custom.css'),
         },
+        sitemap: {
+          changefreq: 'monthly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+        },
       }),
     ],
   ],
@@ -65,7 +71,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [{name: 'keywords', content: 'dependency, inversion, javascript, typescript, nodejs, ioc, container, inversion, control'}],
+      metadata: [{ name: 'keywords', content: 'dependency, inversion, javascript, typescript, nodejs, ioc, container, inversion, control' }],
       colorMode: {
         defaultMode: 'dark',
       },
@@ -111,17 +117,12 @@ const config = {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/microinjection',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
               {
                 label: 'GitHub',
                 href: 'https://github.com/microkits/microinjection',
               },
-            ],
-          },
+            ]
+          }
         ]
       },
       prism: {

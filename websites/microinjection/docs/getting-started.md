@@ -1,23 +1,3 @@
----
-title: Getting Started
----
-
-Connecting everything is a tedious part of app development. <b>Microinjection</b> aims to make development easier and faster by helping you write testable, loosely coupled, and maintainable applications.
-
-Microinjection is written entirely in <b>TypeScript</b>, but supports <b>JavaScript</b> as well.
-
-## Features
-
-- Property Injection
-- Constructor Injection
-- Multiple DI containers
-- Registering and resolving dependencies hierarchically
-- Singleton, Transient, and Context scopes
-- Circular dependencies
-- Out-of-the-box support for injecting values, factories and classes.
-
-## Installation
-
 Microinjection is available as a package on NPM.
 
 To install and save in your package.json dependencies, run the following command:

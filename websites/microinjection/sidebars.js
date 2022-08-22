@@ -1,9 +1,22 @@
 module.exports = {
   docs: [
     {
-      type: 'doc',
-      id: 'getting-started',
-      label: 'Getting Started'
+      type: 'category',
+      label: 'Getting Started',
+      collapsible: true,
+      collapsed: false,
+      items: [
+        {
+          type: 'doc',
+          id: 'getting-started/overview',
+          label: 'Overview'
+        },
+        {
+          type: 'doc',
+          id: 'getting-started/instalation',
+          label: 'Instalation'
+        }
+      ]
     },
     {
       type: 'category',
@@ -23,11 +36,6 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'core-concepts/decorators',
-          label: 'Decorators'
-        },
-        {
-          type: 'doc',
           id: 'core-concepts/providers',
           label: 'Providers'
         },
@@ -43,8 +51,8 @@ module.exports = {
         },
         {
           type: 'doc',
-          id: 'core-concepts/configurations',
-          label: 'Configurations'
+          id: 'core-concepts/modules',
+          label: 'Modules'
         }
       ],
     },
@@ -58,6 +66,11 @@ module.exports = {
           type: 'doc',
           id: 'advanced-usage/usage-with-express',
           label: 'Usage with Express'
+        },
+        {
+          type: 'doc',
+          id: 'advanced-usage/decorators',
+          label: 'Decorators'
         },
         {
           type: 'doc',

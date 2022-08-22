@@ -10,15 +10,11 @@ To learn how to add, resolve or remove registrations from a container, check the
 
 Microinjection works with a hierarchy of containers, this allows you to create complex container structures, according to your needs.
 
-A child container can access and resolve registrations in its parents recursively.
+When you try to resolve a dependency using a container, the container tries to satisfy that dependency with its own registrations. If the container does not have a registration capable of resolving that dependency, it will search recursively in its parent container, until it finds a container that has a registration capable of resolving the dependency or run out of ancestors.
 
 Sibling containers (containers with the same parent) do not share registrations with each other. 
 
 ## Getting a Container
-
-:::note
-Although it is possible to create a container using `new Container()`, it is not recommended, as if you are using TypeScript Decorators, all records will be stored in the default container. A container where the default container is not one of its ancestors, will not be able to resolve the dependencies registered by the decorators.
-:::
 
 The recommendation for simple use cases is to get a singleton container, shared by the entire application using `Microinjection.getDefaultContainer()` helper. You can use this helper function whenever you need an instance of the container: 
 

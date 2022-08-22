@@ -23,7 +23,7 @@ function HomepageHeader() {
             />
           </span>
           <a className="button button--outline button--primary button--lg"
-            href="getting-started">
+            href="getting-started/overview">
             Get Started
           </a>
         </div>
