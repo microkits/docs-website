@@ -1,9 +1,5 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('./src/themes/light');
-const darkCodeTheme = require('./src/themes/dark');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Microinjection',
@@ -74,11 +70,12 @@ const config = {
       metadata: [{ name: 'keywords', content: 'dependency, inversion, javascript, typescript, nodejs, ioc, container, inversion, control' }],
       colorMode: {
         defaultMode: 'dark',
+        disableSwitch: true
       },
       navbar: {
         logo: {
           alt: 'An inversion of the control container to build better Node.js applications.',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg'
         },
         items: [
           {
@@ -126,8 +123,7 @@ const config = {
         ]
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: require('./src/themes/dark')
       },
     }),
 };

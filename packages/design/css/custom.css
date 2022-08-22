@@ -29,4 +29,6 @@ html[data-theme='dark'] {
   --ifm-hero-background-color: #0A0836;
   --ifm-background-surface-color: #070626;
   --ifm-footer-background-color: #000000;
+  --ifm-color-secondary-contrast-background: #070626;
+  --ifm-toc-border-color: #070626;
 }
