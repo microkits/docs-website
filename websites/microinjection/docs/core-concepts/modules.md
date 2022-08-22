@@ -29,7 +29,7 @@ export class ServicesModule extends AbstractModule {
 
 ## Adding a module to the container
 
-You can use `container.addModule()` to load modules into a container instance.
+You can use `container.addModule()` to add modules into a container instance.
 
 ```typescript
 import { Microinjection } from "@microkits/microinjection";

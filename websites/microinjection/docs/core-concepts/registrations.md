@@ -16,7 +16,7 @@ const container = Microinjection.getDefaultContainer();
 container.register("release year");
 ```
 
-You can also use [Configuration objects](configurations) to add registrations to your container.
+You can also use [Modules](modules) to add registrations to your container.
 
 ### Using a Provider
 
