@@ -29,7 +29,7 @@ import { Microinjection } from "@microkits/microinjection";
 
 app.use((req, res, next) => {
   const container = Microinjection.getDefaultContainer();
-  req.context = container.createContext();
+  req.context = container.createResolutionContext();
   next();
 });
 ```
